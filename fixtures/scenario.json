@@ -1,0 +1,194 @@
+[
+  {
+    "label": "initial",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 1,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0001"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "09:00",
+        "geofenceCustomerMessage": "Synthetic notification",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": true
+  },
+  {
+    "label": "during-worker-outage",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 2,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0001"
+          },
+          {
+            "equipmentId": "DEMO0003"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "11:00",
+        "geofenceCustomerMessage": "Synthetic notification",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": false
+  },
+  {
+    "label": "late",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 1,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0001"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "10:00",
+        "geofenceCustomerMessage": "Synthetic notification",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": true
+  },
+  {
+    "label": "redelivery",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 1,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0001"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "09:00",
+        "geofenceCustomerMessage": "Synthetic notification",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": true
+  },
+  {
+    "label": "first-same-minute-candidate",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 1,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0002"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "10:00",
+        "geofenceCustomerMessage": "Synthetic notification",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": true
+  },
+  {
+    "label": "conflicting-same-minute-candidate",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 1,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0002"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "10:00",
+        "geofenceCustomerMessage": "Different synthetic message",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": true
+  },
+  {
+    "label": "invalid-count",
+    "payload": {
+      "geofenceNotification": {
+        "commodity": "SYNTHETIC",
+        "customer633": "DEMO-CUSTOMER",
+        "customerId": 900001,
+        "destination333": "DEMO-DESTINATION",
+        "equipmentCount": 2,
+        "equipmentList": [
+          {
+            "equipmentId": "DEMO0004"
+          }
+        ],
+        "eventDate": "10-01-2026",
+        "eventTime": "09:00",
+        "geofenceCustomerMessage": "Synthetic notification",
+        "geofenceExpirationDate": "2030-12-31",
+        "geofenceName": "Synthetic East Boundary",
+        "loadEmpty": "EMPTY",
+        "origin333": "DEMO-ORIGIN",
+        "sfdcId": "synthetic-record-001",
+        "trainId": "SYNTHETIC-TRAIN-01"
+      }
+    },
+    "worker_available": true
+  }
+]

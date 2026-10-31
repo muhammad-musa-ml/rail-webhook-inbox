@@ -1,0 +1,96 @@
+{
+  "baseline": {
+    "description": "in-memory, arrival-order last-write-wins consumer",
+    "dropped_deliveries": 1,
+    "incorrect_asset_projections": 3,
+    "snapshot": {
+      "DEMO0001": {
+        "occurred_at": "2026-10-01T09:00:00+00:00",
+        "status": "current"
+      },
+      "DEMO0002": {
+        "occurred_at": "2026-10-01T10:00:00+00:00",
+        "status": "current"
+      }
+    }
+  },
+  "durable_inbox": {
+    "ambiguous_assets": 1,
+    "audit": [
+      {
+        "detail": "a4add85b14a9ea20b181c860da1a53382e5482ebe22f79048f7ce10d16f5a969",
+        "outcome": "processed",
+        "receipt_id": 1
+      },
+      {
+        "detail": "f6573638c09e399636baad89c1e30db216e6ba7e12ca368c54ee143c167725f0",
+        "outcome": "processed",
+        "receipt_id": 2
+      },
+      {
+        "detail": "86f9893a5005ff8d0ad7634713d991295ec6ea2e9ec39ee4f75a9628f318480a",
+        "outcome": "processed",
+        "receipt_id": 3
+      },
+      {
+        "detail": "a4add85b14a9ea20b181c860da1a53382e5482ebe22f79048f7ce10d16f5a969",
+        "outcome": "duplicate",
+        "receipt_id": 4
+      },
+      {
+        "detail": "5b2d2c2b4546c02438bece45757a91337814dc1f90327ca982dc7f67e8f74851",
+        "outcome": "processed",
+        "receipt_id": 5
+      },
+      {
+        "detail": "9cfc08178e47e3c6887afe90a6537e3b0023b99aa84ca81a5246cdd3ed71aee0",
+        "outcome": "processed",
+        "receipt_id": 6
+      },
+      {
+        "detail": "equipmentCount does not match equipmentList",
+        "outcome": "rejected",
+        "receipt_id": 7
+      }
+    ],
+    "duplicate": 1,
+    "incorrect_asset_projections": 0,
+    "observations": 6,
+    "pending": 0,
+    "persisted_pending_before_worker_restart": 1,
+    "processed": 5,
+    "receipts": 7,
+    "rejected": 1,
+    "replay_matches_snapshot_and_audit": true,
+    "snapshot": {
+      "DEMO0001": {
+        "occurred_at": "2026-10-01T11:00:00+00:00",
+        "status": "current"
+      },
+      "DEMO0002": {
+        "occurred_at": "2026-10-01T10:00:00+00:00",
+        "status": "ambiguous"
+      },
+      "DEMO0003": {
+        "occurred_at": "2026-10-01T11:00:00+00:00",
+        "status": "current"
+      }
+    }
+  },
+  "oracle": {
+    "DEMO0001": {
+      "occurred_at": "2026-10-01T11:00:00+00:00",
+      "status": "current"
+    },
+    "DEMO0002": {
+      "occurred_at": "2026-10-01T10:00:00+00:00",
+      "status": "ambiguous"
+    },
+    "DEMO0003": {
+      "occurred_at": "2026-10-01T11:00:00+00:00",
+      "status": "current"
+    }
+  },
+  "scenario": "seven synthetic deliveries, three equipment IDs, one worker outage",
+  "source_offset": "+00:00 (fixture assumption, not a BNSF timezone claim)"
+}

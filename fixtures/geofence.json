@@ -1,0 +1,23 @@
+{
+  "geofenceNotification": {
+    "commodity": "SYNTHETIC",
+    "customer633": "DEMO-CUSTOMER",
+    "customerId": 900001,
+    "destination333": "DEMO-DESTINATION",
+    "equipmentCount": 1,
+    "equipmentList": [
+      {
+        "equipmentId": "DEMO0001"
+      }
+    ],
+    "eventDate": "10-01-2026",
+    "eventTime": "09:00",
+    "geofenceCustomerMessage": "Synthetic notification",
+    "geofenceExpirationDate": "2030-12-31",
+    "geofenceName": "Synthetic East Boundary",
+    "loadEmpty": "EMPTY",
+    "origin333": "DEMO-ORIGIN",
+    "sfdcId": "synthetic-record-001",
+    "trainId": "SYNTHETIC-TRAIN-01"
+  }
+}
