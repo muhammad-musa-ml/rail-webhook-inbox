@@ -4,7 +4,7 @@
 
 A small, offline customer-integration prototype: durably receive a rail geofence notification, recover processing after a worker crash, and explain which observation a customer application should display.
 
-## Why this fits BNSF's public work
+## How this relates to BNSF's public webhook guide
 
 BNSF's [public webhook guide](https://www.bnsf.com/ship-with-bnsf/support-services/customer-api/push-notifications/) describes customer event delivery, including geofence notifications, and recommends persisting requests before processing. This repository implements that integration pattern locally and adds replay, duplicate suppression and conservative handling of conflicting timestamps. It uses the published payload structure with invented values. It does not connect to BNSF, access internal code or establish that BNSF has a defect.
 
